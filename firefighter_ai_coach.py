@@ -18,7 +18,7 @@ if not os.path.exists(log_file):
 st.title("🧠 Firefighter AI Mental Health & Mindset Coach")
 
 # Admin access for analytics
-if "admin" in st.experimental_get_query_params():
+if "admin" in st.query_params:
     st.subheader("📊 Usage Analytics Dashboard")
     df = pd.read_csv(log_file)
     if not df.empty:
