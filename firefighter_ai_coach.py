@@ -1,6 +1,7 @@
 
 import streamlit as st
 import openai
+from openai import OpenAI
 
 # Set your OpenAI API key here or use Streamlit secrets
 openai.api_key = st.secrets["OPENAI_API_KEY"]
@@ -27,14 +28,16 @@ if st.button("Submit"):
 
 Respond with understanding, and guide them with either a grounding exercise, growth mindset insight (challenges are gifts), or resilience coaching depending on what they said."""
 
-        response = openai.ChatCompletion.create(
-            model="gpt-4o",
-            messages=[
-                {"role": "system", "content": "You are an empathetic AI coach for firefighters."},
-                {"role": "user", "content": prompt}
-            ],
-            temperature=0.7
-        )
-        ai_message = response['choices'][0]['message']['content']
+ client = openai.OpenAI()
+response = client.chat.completions.create(
+    model="gpt-4o",
+    messages=[
+        {"role": "system", "content": "You are an empathetic AI coach for firefighters."},
+        {"role": "user", "content": prompt}
+    ],
+    temperature=0.7
+)
+ai_message = response.choices[0].message.content
+
         st.markdown("### 🔊 Your AI Coach Says:")
         st.markdown(ai_message)
