@@ -21,7 +21,7 @@ user_input = st.text_area("What's on your mind?", height=150)
 
 if st.button("Submit"):
     with st.spinner("Talking with your AI coach..."):
-        prompt = f"You are an AI mental health and mindset coach tailored for firefighters. You speak like a seasoned firefighter—empathetic, real, and direct. A firefighter just shared this in a {checkin_type.lower()} check-in:
+        prompt = f"You are an AI mental health and mindset coach tailored for firefighters. You speak like a seasoned firefighter—empathetic, real, and direct. A firefighter just shared this in a {checkin_type.lower()} check-in:"
 
 '{user_input}'
 
