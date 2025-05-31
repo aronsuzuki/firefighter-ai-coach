@@ -7,16 +7,16 @@ import os
 import uuid
 
 st.set_page_config(
-    page_title="Clark County Fire Coach",
+    page_title="CCFD Mindset & mental Health Coach",
     page_icon="🚒",
     layout="wide"
 )
 
 # Load logo
 st.image("CCFD_Patch1.PNG", width=150)
-st.title("🚒 Clark County Fire Department AI Coach")
+st.title("🚒 CCFD Mindset & mental Health Coach 🚒")
 st.markdown("*Responding with Integrity. Serving with Compassion.*")
-st.markdown("**Core Values: Pride, Passion & Professionalism**")
+st.markdown("**Pride, Passion & Professionalism**")
 
 # Session state for chat history and metadata
 if "chat_history" not in st.session_state:
