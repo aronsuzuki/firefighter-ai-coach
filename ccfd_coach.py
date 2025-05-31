@@ -11,7 +11,7 @@ st.set_page_config(page_title="CCFD Mindset & Mental Health Coach", page_icon="�
 st.image("CCFD_Patch1.PNG", width=100)
 st.title("🚒 CCFD Mindset & Mental Health Coach")
 st.caption("Responding with Integrity • Serving with Compassion")
-st.markdown("**Values: Pride, Passion & Professionalism**")
+st.markdown("**Pride, Passion & Professionalism**")
 
 # Tone selector
 tone = st.selectbox("Select your preferred coaching tone:", ["Conversational", "Calm & Clinical", "Tough Love"])
