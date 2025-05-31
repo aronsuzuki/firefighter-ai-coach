@@ -11,14 +11,14 @@ st.set_page_config(page_title="CCFD Mindset & Mental Health Coach", page_icon="�
 st.image("CCFD_Patch1.PNG", width=100)
 st.title("🚒 CCFD Mindset & Mental Health Coach")
 st.caption("Responding with Integrity • Serving with Compassion")
-st.markdown("**Values: Pride, Passion & Professionalism**")
+st.markdown("**Pride, Passion & Professionalism**")
 
 # Tone selector
-tone = st.selectbox("Select your preferred coaching tone:", ["Peer-like", "Calm Coach", "Direct Coach"])
+tone = st.selectbox("Select your preferred coaching tone:", ["Conversational", "Calm & Clinical", "Tough Love"])
 tone_prompts = {
-    "Peer-like": "Speak like a seasoned firefighter peer. Use casual, relatable language.",
-    "Calm Coach": "Use a calm, reflective tone. Focus on emotional awareness and gentle redirection.",
-    "Direct Coach": "Be direct and challenge the user to take ownership and reflect with accountability."
+    "Conversational": "Speak like a seasoned firefighter peer. Use casual, relatable language.",
+    "Calm & Clinical": "Use a calm, reflective tone. Focus on emotional awareness, a growth mindset and gentle redirection.",
+    "Tough Love": "Don't coddle, be direct and challenge the user with ownership and resilience mindset."
 }
 
 # Start chat history
