@@ -36,7 +36,7 @@ with st.sidebar:
     if st.button("🔁 Reset Conversation"):
         st.session_state.chat_history = st.session_state.chat_history[:1]
         st.session_state.checkin_type = None
-        st.experimental_rerun()
+        st.rerun()
 
     if "admin" in st.query_params:
         st.markdown("### 📊 Admin Mode")
@@ -85,7 +85,7 @@ if st.button("Send"):
             ai_reply = response.choices[0].message.content
             st.session_state.chat_history.append({"role": "assistant", "content": ai_reply})
 
-        st.experimental_rerun()
+        st.rerun()
 
 # Log session metadata on exit
 if "end_logged" not in st.session_state and len(st.session_state.chat_history) > 2:
