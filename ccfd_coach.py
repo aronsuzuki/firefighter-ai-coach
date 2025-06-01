@@ -44,7 +44,7 @@ elif selected_tool == "🧠 Clear Mind After Miscommunication":
     st.info("Reflect: What emotion are you holding? Who benefits if you let it go? Say: *I didn’t know then what I know now. I’ll do better next time.*")
 
 # User input
-user_input = st.chat_input("What’s on your mind?")
+user_input = st.chat_input("How you doin? What’s on your mind?")
 if user_input:
     st.session_state.chat_history.append({"role": "user", "content": user_input})
 
