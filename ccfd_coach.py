@@ -24,7 +24,7 @@ tone_prompts = {
 # Initialize chat history
 if "chat_history" not in st.session_state:
     st.session_state.chat_history = [
-        {"role": "system", "content": f"You are an AI mindset and mental health coach for firefighters. {tone_prompts[tone]}"}
+        {"role": "system", "content": f"You are an AI mindset and mental health coach for firefighters. You have received training on the IAFF Peer Support. You understand the value of self-care and viewing challenges with a growth-mindset. You draw examples from stoicism.  {tone_prompts[tone]}"}
     ]
 
 # Micro-Coaching Modules
