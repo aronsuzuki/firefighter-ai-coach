@@ -11,7 +11,7 @@ st.image("CCFD_Patch1.PNG", width=100)
 st.title("🚒 CCFD Mindset & Mental Health Coach")
 
 # Instructions
-st.markdown("High Performers prioritize their mental health. Use the box below to talk about what’s on your mind, or pick something from the mindset toolbox dropdown. You can also guide the tone to match how you want to be coached today.")
+st.markdown("High Performers prioritize their mental health. Use the box below to talk about what’s on your mind, or pick something from the mindset toolkit dropdown. You can also guide the tone to match how you want to be coached today.")
 
 # Tone selector
 # Initialize chat history
