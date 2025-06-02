@@ -100,16 +100,22 @@ for msg in st.session_state.chat_history:
 
 st.markdown("""
 <style>
-footer {visibility: hidden;}
-footer:after {
-    content: "🚧 This is a demonstration version of the CCFD Mindset & Mental Health Coach. It is a work in progress and not a substitute for professional clinical support.";
-    visibility: visible;
-    display: block;
-    position: relative;
+#custom-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f9f9f9;
     text-align: center;
     color: gray;
-    padding: 1rem;
-    font-size: 0.85rem;
+    padding: 10px 0;
+    font-size: 0.8rem;
+    z-index: 9999;
+    border-top: 1px solid #ccc;
 }
 </style>
+<div id="custom-footer">
+🚧 This is a demonstration version of the CCFD Mindset & Mental Health Coach. It is a work in progress and not a substitute for professional clinical support.
+</div>
 """, unsafe_allow_html=True)
+
